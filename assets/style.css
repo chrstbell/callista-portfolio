@@ -53,13 +53,14 @@ main{min-height:100vh; display:flex; align-items:center; padding:120px 8vw 80px 
 .side-heading{font-family:'Source Serif 4',serif; font-weight:500; font-size:19px; margin-bottom:20px;}
 
 .idrow{display:flex; align-items:flex-end; gap:22px; margin-bottom:38px;}
-.idphoto{width:86px; height:112px; background:#ECE8DD; border:1px solid var(--sage-light);
-  flex-shrink:0; display:flex; align-items:center; justify-content:center; position:relative;}
+.idphoto{width:250px; height:280px; background:#ECE8DD; border:1px solid var(--sage-light);
+  flex-shrink:0; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
+.idphoto img{width:100%; height:100%; object-fit:cover;}
 .idphoto span{font-family:'Source Serif 4',serif; font-style:italic; font-size:30px; color:var(--stone);}
-.status-tag{display:inline-block; margin-top:11px; padding:5px 14px; font-size:12.5px; letter-spacing:.03em;
+.status-tag{display:inline-block; margin-top:6px; padding:5px 14px; font-size:12.5px; letter-spacing:.03em;
   border-radius:999px; background:var(--tag-bg); color:var(--tag-text);}
 .idname h1{font-family:'Source Serif 4',serif; font-weight:500; font-size:clamp(26px,3vw,32px); line-height:1.15;}
-.idname p{margin-top:6px; font-size:14px; color:var(--ink-soft);}
+.idname p{margin-top:4px; font-size:14px; color:var(--ink-soft);}
 
 .statement{font-family:'Source Serif 4',serif; font-style:italic; font-weight:400; font-size:clamp(24px,3.1vw,34px); line-height:1.32; letter-spacing:-.005em; max-width:19ch;}
 .bio{margin-top:26px; font-size:16px; line-height:1.75; color:var(--ink-soft); max-width:52ch; font-weight:400;}
