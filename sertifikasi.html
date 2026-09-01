@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pagetitle">Sertifikasi — Callista Adelia Rufana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="edge">
+    <div class="edge-line"></div>
+    <div class="edge-dots"><span></span><span></span><span></span></div>
+  </div>
+  <div class="hint" id="hint">Arahkan kursor ke tepi kiri untuk navigasi</div>
+
+  <nav class="rail" id="rail">
+    <div>
+      <button class="close-btn" id="closeBtn" aria-label="Tutup navigasi">×</button>
+      <div class="rail-top">CAR</div>
+      <div class="rail-list">
+        <a href="index.html"><span class="n">01</span><span id="nav1">Beranda</span></a>
+        <a href="tentang.html"><span class="n">02</span><span id="nav2">Tentang</span></a>
+        <a href="pengalaman.html"><span class="n">03</span><span id="nav3">Pengalaman</span></a>
+        <a href="pendidikan.html"><span class="n">04</span><span id="nav4">Pendidikan</span></a>
+        <a href="sertifikasi.html" class="active"><span class="n">05</span><span id="nav5">Sertifikasi</span></a>
+        <a href="kontak.html"><span class="n">06</span><span id="nav6">Kontak</span></a>
+      </div>
+    </div>
+    <div class="rail-bottom" id="rail-bottom">apt. Callista Adelia Rufana, S.Farm<br>Tasikmalaya, Jawa Barat</div>
+  </nav>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="lang">
+    <button class="active" id="btn-id" onclick="setLang('id')">ID</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <main>
+    <div class="page-layout">
+      <div class="frame">
+        <div class="statement r r1" id="heading">Sertifikasi & Lisensi</div>
+
+        <div class="entry-ledger r r2">
+          <div class="entry">
+            <h3 id="cert1name">Surat Tanda Registrasi Apoteker (STRA)</h3>
+            <div class="e-meta">
+              <p id="cert1issuer">Konsil Kesehatan Indonesia</p>
+              <p class="e-num" id="cert1number">Nomor: PN0000****4547</p>
+              <p id="cert1date">Terbit: 18 Oktober 2025</p>
+            </div>
+            <span class="status-dot" id="cert1status">Aktif — Berlaku Seumur Hidup</span>
+          </div>
+          <div class="entry">
+            <h3 id="cert2name">Sertifikat Kompetensi Apoteker</h3>
+            <div class="e-meta">
+              <p id="cert2issuer">Kolegium Farmasi Indonesia</p>
+              <p id="cert2date">Terbit: 13 September 2025</p>
+            </div>
+          </div>
+          <div class="entry">
+            <h3 id="cert3name">Kartu Tanda Anggota — Ikatan Apoteker Indonesia (IAI)</h3>
+            <div class="e-meta">
+              <p id="cert3date">Berlaku hingga: Oktober 2030</p>
+            </div>
+            <span class="status-dot" id="cert3status">Aktif</span>
+          </div>
+        </div>
+
+        <p class="cert-note r r3" id="certnote" style="font-size:14px; color:var(--stone); margin-top:28px; font-style:italic;">Salinan resmi dokumen tersedia atas permintaan saat proses seleksi.</p>
+      </div>
+
+      <aside class="side-panel r r4">
+        <div class="sp-label" id="comp label">Area Kompetensi Apoteker</div>
+        <ul>
+          <li id="comp1">Profesionalisme</li>
+          <li id="comp2">Mawas Diri & Pengembangan Diri</li>
+          <li id="comp3">Komunikasi Efektif</li>
+          <li id="comp4">Landasan Ilmiah Farmasi, Biomedik & Kesehatan Masyarakat</li>
+          <li id="comp5">Keterampilan Apoteker</li>
+          <li id="comp6">Pengelolaan Praktik Kefarmasian</li>
+        </ul>
+        <div class="sp-meta" id="comp meta">Berdasarkan Sertifikat Kompetensi — Kolegium Farmasi</div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="assets/nav.js"></script>
+  <script>
+const content = {
+  id: {
+    heading:"Sertifikasi & Lisensi",
+    cert1name:"Surat Tanda Registrasi Apoteker (STRA)", cert1issuer:"Konsil Kesehatan Indonesia",
+    cert1number:"Nomor: PN0000****4547", cert1date:"Terbit: 18 Oktober 2025", cert1status:"Aktif — Berlaku Seumur Hidup",
+    cert2name:"Sertifikat Kompetensi Apoteker", cert2issuer:"Kolegium Farmasi Indonesia", cert2date:"Terbit: 13 September 2025",
+    cert3name:"Kartu Tanda Anggota — Ikatan Apoteker Indonesia (IAI)", cert3date:"Berlaku hingga: Oktober 2030", cert3status:"Aktif",
+    certnote:"Salinan resmi dokumen tersedia atas permintaan saat proses seleksi.",
+    "comp label":"Area Kompetensi Apoteker",
+    comp1:"Profesionalisme", comp2:"Mawas Diri & Pengembangan Diri", comp3:"Komunikasi Efektif",
+    comp4:"Landasan Ilmiah Farmasi, Biomedik & Kesehatan Masyarakat", comp5:"Keterampilan Apoteker", comp6:"Pengelolaan Praktik Kefarmasian",
+    "comp meta":"Berdasarkan Sertifikat Kompetensi — Kolegium Farmasi",
+    nav:["Beranda","Tentang","Pengalaman","Pendidikan","Sertifikasi","Kontak"],
+    railBottom:"Tasikmalaya, Jawa Barat",
+    pagetitle:"Sertifikasi — Callista Adelia Rufana",
+    hintHover:"Arahkan kursor ke tepi kiri untuk navigasi", hintTouch:"Ketuk tepi kiri untuk navigasi"
+  },
+  en: {
+    heading:"Certification & Licenses",
+    cert1name:"Pharmacist Registration Certificate (STRA)", cert1issuer:"Indonesian Health Council",
+    cert1number:"Number: PN0000****4547", cert1date:"Issued: 18 October 2025", cert1status:"Active — Valid for Life",
+    cert2name:"Pharmacist Competency Certificate", cert2issuer:"Indonesian Pharmacy Collegium", cert2date:"Issued: 13 September 2025",
+    cert3name:"Membership Card — Indonesian Pharmacists Association (IAI)", cert3date:"Valid until: October 2030", cert3status:"Active",
+    certnote:"Official copies available upon request during the selection process.",
+    "comp label":"Pharmacist Competency Areas",
+    comp1:"Professionalism", comp2:"Self-Awareness & Self-Development", comp3:"Effective Communication",
+    comp4:"Pharmaceutical, Biomedical & Public Health Scientific Foundation", comp5:"Pharmacist Skills", comp6:"Pharmaceutical Practice Management",
+    "comp meta":"Based on Competency Certificate — Indonesian Pharmacy Collegium",
+    nav:["Home","About","Experience","Education","Certification","Contact"],
+    railBottom:"Tasikmalaya, West Java",
+    pagetitle:"Certification — Callista Adelia Rufana",
+    hintHover:"Move your cursor to the left edge for navigation", hintTouch:"Tap the left edge for navigation"
+  }
+};
+function setLang(l){
+  localStorage.setItem('lang', l);
+  const c = content[l];
+  document.getElementById('heading').textContent = c.heading;
+  document.getElementById('cert1name').textContent = c.cert1name;
+  document.getElementById('cert1issuer').textContent = c.cert1issuer;
+  document.getElementById('cert1number').textContent = c.cert1number;
+  document.getElementById('cert1date').textContent = c.cert1date;
+  document.getElementById('cert1status').textContent = c.cert1status;
+  document.getElementById('cert2name').textContent = c.cert2name;
+  document.getElementById('cert2issuer').textContent = c.cert2issuer;
+  document.getElementById('cert2date').textContent = c.cert2date;
+  document.getElementById('cert3name').textContent = c.cert3name;
+  document.getElementById('cert3date').textContent = c.cert3date;
+  document.getElementById('cert3status').textContent = c.cert3status;
+  document.getElementById('certnote').textContent = c.certnote;
+  document.getElementById('comp label').textContent = c["comp label"];
+  document.getElementById('comp1').textContent = c.comp1;
+  document.getElementById('comp2').textContent = c.comp2;
+  document.getElementById('comp3').textContent = c.comp3;
+  document.getElementById('comp4').textContent = c.comp4;
+  document.getElementById('comp5').textContent = c.comp5;
+  document.getElementById('comp6').textContent = c.comp6;
+  document.getElementById('comp meta').textContent = c["comp meta"];
+  hint.textContent = hasHover ? c.hintHover : c.hintTouch;
+  c.nav.forEach((t,i) => document.getElementById('nav'+(i+1)).textContent = t);
+  document.getElementById('rail-bottom').innerHTML = 'apt. Callista Adelia Rufana, S.Farm<br>' + c.railBottom;
+  document.getElementById('pagetitle').textContent = c.pagetitle;
+  document.getElementById('btn-id').classList.toggle('active', l==='id');
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+}
+setLang(localStorage.getItem('lang') || 'id');
+  </script>
+</body>
+</html>

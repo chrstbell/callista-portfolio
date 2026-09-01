@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pagetitle">Kontak — Callista Adelia Rufana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="edge">
+    <div class="edge-line"></div>
+    <div class="edge-dots"><span></span><span></span><span></span></div>
+  </div>
+  <div class="hint" id="hint">Arahkan kursor ke tepi kiri untuk navigasi</div>
+
+  <nav class="rail" id="rail">
+    <div>
+      <button class="close-btn" id="closeBtn" aria-label="Tutup navigasi">×</button>
+      <div class="rail-top">CAR</div>
+      <div class="rail-list">
+        <a href="index.html"><span class="n">01</span><span id="nav1">Beranda</span></a>
+        <a href="tentang.html"><span class="n">02</span><span id="nav2">Tentang</span></a>
+        <a href="pengalaman.html"><span class="n">03</span><span id="nav3">Pengalaman</span></a>
+        <a href="pendidikan.html"><span class="n">04</span><span id="nav4">Pendidikan</span></a>
+        <a href="sertifikasi.html"><span class="n">05</span><span id="nav5">Sertifikasi</span></a>
+        <a href="kontak.html" class="active"><span class="n">06</span><span id="nav6">Kontak</span></a>
+      </div>
+    </div>
+    <div class="rail-bottom" id="rail-bottom">apt. Callista Adelia Rufana, S.Farm<br>Tasikmalaya, Jawa Barat</div>
+  </nav>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="lang">
+    <button class="active" id="btn-id" onclick="setLang('id')">ID</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <main>
+    <div class="page-layout">
+      <div class="frame">
+        <div class="statement r r1" id="heading">Mari Terhubung.</div>
+
+        <div style="margin-top:40px;">
+          <div style="margin-bottom:28px;" class="r r2">
+            <div style="font-size:13px; color:var(--stone); margin-bottom:6px;" id="email label">Email</div>
+            <div style="font-size:16px;"><a href="mailto:callistaadelia841@gmail.com" style="text-decoration:none; color:var(--ink); border-bottom:1px solid var(--stone); padding-bottom:2px;">callistaadelia841@gmail.com</a></div>
+          </div>
+
+          <div style="margin-bottom:28px;" class="r r3">
+            <div style="font-size:13px; color:var(--stone); margin-bottom:6px;" id="linkedin label">LinkedIn</div>
+            <div style="font-size:16px;"><a href="https://linkedin.com/in/callista-adelia-rufana" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:var(--ink); border-bottom:1px solid var(--stone); padding-bottom:2px;">linkedin.com/in/callista-adelia-rufana</a></div>
+          </div>
+
+          <div style="margin-bottom:28px;" class="r r3">
+            <div style="font-size:13px; color:var(--stone); margin-bottom:6px;" id="whatsapp label">WhatsApp</div>
+            <div style="font-size:16px;"><a href="https://wa.me/+6288806329219" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:var(--ink); border-bottom:1px solid var(--stone); padding-bottom:2px;">+6288806329219</a></div>
+          </div>
+
+          <div style="margin-bottom:36px;" class="r r4">
+            <div style="font-size:13px; color:var(--stone); margin-bottom:6px;" id="location label">Kota Domisili</div>
+            <div style="font-size:16px;" id="location value">Tasikmalaya, Jawa Barat</div>
+          </div>
+
+          <div class="r r5">
+            <a href="#" class="btn-fill" id="cv btn">Unduh CV</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="side-panel r r6">
+        <div class="sp-label" id="motiv label">Motivasi</div>
+        <blockquote id="motiv quote">"Saya percaya ketelitian dan kepatuhan terhadap regulasi adalah fondasi utama dalam distribusi obat yang aman — dan saya ingin terus belajar sambil memberi kontribusi nyata di tempat yang tepat."</blockquote>
+      </aside>
+    </div>
+  </main>
+
+  <script src="assets/nav.js"></script>
+  <script>
+const content = {
+  id: {
+    heading:"Mari Terhubung.",
+    "email label":"Email",
+    "linkedin label":"LinkedIn",
+    "whatsapp label":"WhatsApp",
+    "location label":"Kota Domisili",
+    "location value":"Tasikmalaya, Jawa Barat",
+    "cv btn":"Unduh CV",
+    "motiv label":"Motivasi",
+    "motiv quote":"\"Saya percaya ketelitian dan kepatuhan terhadap regulasi adalah fondasi utama dalam distribusi obat yang aman — dan saya ingin terus belajar sambil memberi kontribusi nyata di tempat yang tepat.\"",
+    nav:["Beranda","Tentang","Pengalaman","Pendidikan","Sertifikasi","Kontak"],
+    railBottom:"Tasikmalaya, Jawa Barat",
+    pagetitle:"Kontak — Callista Adelia Rufana",
+    hintHover:"Arahkan kursor ke tepi kiri untuk navigasi", hintTouch:"Ketuk tepi kiri untuk navigasi"
+  },
+  en: {
+    heading:"Let's Connect.",
+    "email label":"Email",
+    "linkedin label":"LinkedIn",
+    "whatsapp label":"WhatsApp",
+    "location label":"City",
+    "location value":"Tasikmalaya, West Java",
+    "cv btn":"Download CV",
+    "motiv label":"Motivation",
+    "motiv quote":"\"I believe precision and regulatory discipline are the foundation of safe drug distribution — and I want to keep learning while contributing meaningfully to the right team.\"",
+    nav:["Home","About","Experience","Education","Certification","Contact"],
+    railBottom:"Tasikmalaya, West Java",
+    pagetitle:"Contact — Callista Adelia Rufana",
+    hintHover:"Move your cursor to the left edge for navigation", hintTouch:"Tap the left edge for navigation"
+  }
+};
+function setLang(l){
+  localStorage.setItem('lang', l);
+  const c = content[l];
+  document.getElementById('heading').textContent = c.heading;
+  document.getElementById('email label').textContent = c["email label"];
+  document.getElementById('linkedin label').textContent = c["linkedin label"];
+  document.getElementById('whatsapp label').textContent = c["whatsapp label"];
+  document.getElementById('location label').textContent = c["location label"];
+  document.getElementById('location value').textContent = c["location value"];
+  document.getElementById('cv btn').textContent = c["cv btn"];
+  document.getElementById('motiv label').textContent = c["motiv label"];
+  document.getElementById('motiv quote').textContent = c["motiv quote"];
+  hint.textContent = hasHover ? c.hintHover : c.hintTouch;
+  c.nav.forEach((t,i) => document.getElementById('nav'+(i+1)).textContent = t);
+  document.getElementById('rail-bottom').innerHTML = 'apt. Callista Adelia Rufana, S.Farm<br>' + c.railBottom;
+  document.getElementById('pagetitle').textContent = c.pagetitle;
+  document.getElementById('btn-id').classList.toggle('active', l==='id');
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+}
+setLang(localStorage.getItem('lang') || 'id');
+  </script>
+</body>
+</html>
